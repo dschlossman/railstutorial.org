@@ -7,6 +7,11 @@ gem 'rails', '4.1.2'
 group :development do
 gem 'sqlite3'
 gem 'rspec-rails'
+gem 'guard-rspec', '2.5.0'
+gem 'spork-rails', '4.0.0'
+gem 'guard-spork', '1.5.0'
+gem 'childprocess'
+
 end
 
 group :production do
@@ -15,8 +20,9 @@ group :production do
 end
 
 group :test do
- # gem 'selenium-webdriver'
+  gem 'selenium-webdriver'
   gem 'capybara'
+  gem 'growl'
 end
 
 # Use SCSS for stylesheets
